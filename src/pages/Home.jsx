@@ -5,7 +5,7 @@ import Hero from '../components/Hero'
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Navbar login={"Log in"} signup={"Sign up"} help={"Help"}/>
       <Hero />
     </div>
   )
