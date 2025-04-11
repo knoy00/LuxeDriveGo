@@ -1,12 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import GetApp from './GetApp'
+import NewFeatures from './NewFeatures'
 
 function Home() {
   return (
     <div>
-      <Navbar login={"Log in"} signup={"Sign up"} help={"Help"}/>
+      <Navbar signin={{label: 'Sign in'}} signup={"Sign up"} help={"Help"}/>
       <Hero />
+      <GetApp />
+      <NewFeatures />
     </div>
   )
 }
