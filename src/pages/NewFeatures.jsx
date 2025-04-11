@@ -2,6 +2,7 @@ import React from 'react'
 import manAnimate from '../assets/images/man_animate.jpeg'
 import GetStartedBtn from '../components/GetStartedBtn'
 import Women from '../assets/images/women.png'
+import DropOff from '../assets/images/Dropoff.jpeg'
 
 function NewFeatures() {
   return (
@@ -19,6 +20,7 @@ function NewFeatures() {
                     <GetStartedBtn />
                 </div>
             </div>
+
             <div  className='flex justify-center items-center gap-x-30 mb-10'>
                 <div>
                     <h1 className='text-4xl font-semibold mb-10'>Safety PIN</h1>
@@ -28,6 +30,17 @@ function NewFeatures() {
                     <GetStartedBtn />
                 </div>
                 <img src={Women} alt="Man in couch" className='w-120 rounded-4xl'/>
+            </div>
+
+            <div  className='flex justify-center items-center gap-x-30 mb-10'>
+                <img src={DropOff} alt="Man in couch" className='w-120 rounded-4xl'/>
+                <div>
+                    <h1 className='text-4xl font-semibold mb-10'>LuxeDrop</h1>
+                    <p className='text-[18px]'>
+                        Need to send a package quickly? LuxeDrop lets you book a driver to deliver your parcels, documents, or small items securely and on time. Whether it's a last-minute delivery or a planned drop-off, LuxeDrop ensures fast and reliable service.
+                    </p>
+                    <GetStartedBtn />
+                </div>
             </div>
         </div>
       </div>

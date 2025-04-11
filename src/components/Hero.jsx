@@ -6,7 +6,7 @@ import { ArrowRight, CarTaxiFront, CreditCard, Lock } from 'lucide-react'
 
 function Hero() {
   return (
-    <div className='w-full mt-30 px-20'>
+    <div className='w-full mt-30 px-20 h-[75vh]'>
       <div className='text-center'>
         <motion.h1 className='text-6xl mt-15 font-semibold'
         initial={{opacity: 0, y: 200}}
@@ -39,15 +39,15 @@ function Hero() {
         transition={{duration: 2, ease: 'easeOut'}}
         >
             <div className='bg-black w-110 px-10 py-15 flex flex-col justify-center items-center rounded-4xl'>
-                <CarTaxiFront color='black' size={80} className='mb-10 bg-white rounded-4xl p-2 '/>
+                <CarTaxiFront color='black' size={70} className='mb-10 bg-white rounded-4xl p-2 '/>
                 <p className='text-[20px] font-regular'>Fast and convenient rides</p>
             </div>
             <div className='bg-black w-110 px-10 py-15 flex flex-col justify-center items-center rounded-4xl'>
-                <CreditCard color='black' size={80} className='mb-10 bg-white rounded-4xl p-2'/>
+                <CreditCard color='black' size={70} className='mb-10 bg-white rounded-4xl p-2'/>
                 <p className='text-[20px] font-regular'>Easy payments, cashless experience</p>
             </div>
             <div className='bg-black w-110 px-10 py-15 flex flex-col justify-center items-center rounded-4xl'>
-                <Lock color='black' size={80} className='mb-10 bg-white rounded-4xl p-2'/>
+                <Lock color='black' size={70} className='mb-10 bg-white rounded-4xl p-2'/>
                 <p className='text-[20px] font-regular'>Safe rides with verified drivers</p>
             </div>
            
