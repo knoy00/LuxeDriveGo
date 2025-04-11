@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
-const Navbar = ({login, signup, help}) => {
+const Navbar = ({signin, signup, help}) => {
     const navigate = useNavigate();
   return (
     <div className=' bg-black w-full'>
@@ -16,7 +16,7 @@ const Navbar = ({login, signup, help}) => {
             <div >
                 <ul className='flex justify-center items-center space-x-10 text-white font-semibold'>
                     <li className='cursor-pointer'>{help}</li>
-                    <li className='cursor-pointer'>{login}</li>
+                    <li className='cursor-pointer' onClick={() => navigate('/Signin')}>{signin?.label}</li>
                     <li className='cursor-pointer' onClick={() => navigate('/Signup')}>{signup}</li>
                     {/* <li></li> */}
                 </ul>
